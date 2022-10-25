@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Login</title>
+	<script src="https://kit.fontawesome.com/1fc58907cf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="overlay"></div>
+	<div class="image"></div>
+	<div class="content">
+		<div class="form-container">
+			<h2>Let's Sign You In!</h2>
+			<form method="get">
+				<p class="field">Username</p>
+				<input class="input-area" id="username" type="text" placeholder="Your nickname">
+
+				<div class="alert" id="uname-alert-container">
+					<i class="fa-solid fa-circle-exclamation"></i>
+					<p class="field-alert" id="uname-alert">Username Problem</p>
+				</div>
+
+				<p class="field">Password:</p>
+				<input class="input-area" id="password" type="password" placeholder="Shhh! It's a secret.">
+
+				<div class="alert" id="pass-alert-container">
+					<i class="fa-solid fa-circle-exclamation"></i>
+					<p class="field-alert" id="pass-alert">Password Problem</p>
+				</div>
+
+				<div class="btn-container">
+					<input class="submit-btn" id="submit" type="submit" value="Sign In">
+					<!-- <a href="#">Forgot Password?</a> -->
+					<p>Attempts: <span id="attempts"></span></p>
+					<div class="timer"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
